@@ -1,0 +1,19 @@
+{
+  "name": "hash256-colab-miner",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "status": "node orchestrator.mjs status",
+    "mine": "node orchestrator.mjs mine",
+    "dry": "DRY_RUN=true node orchestrator.mjs mine",
+    "verify": "node orchestrator.mjs verify",
+    "gpu": "bash scripts/gpu_detect.sh",
+    "build:cpu": "bash scripts/build_cpu.sh",
+    "build:cuda": "bash scripts/build_cuda.sh"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "viem": "latest"
+  }
+}
